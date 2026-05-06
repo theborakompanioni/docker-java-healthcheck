@@ -29,7 +29,7 @@ public class HealthCheck {
                     System.exit(2);
                 }
                 if (response.body().lines().noneMatch(it -> it.contains(line))) {
-                    System.err.printf("Healthcheck error: Body does not contains line `%s`.%n", line);
+                    System.err.printf("Healthcheck error: Body does not contain line `%s`.%n", line);
                     System.exit(3);
                 }
             }
